@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate form</title>
+    <script src="form.js"></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red">Đổi mật khẩu</h1>
+    <form action="">
+        <div>
+            <label>Tên đăng nhập:</label>
+            <input type="text" name="username">
+            <p id="errorUserName" class="error"></p>
+        </div>
+        <div>
+            <label>Nhập mật khẩu cũ:</label>
+            <input type="text" name="oldPassword">
+            <p id="errorOldPassword" class="error"></p>
+        </div>
+        <div>
+            <label>Nhập mật khẩu mới:</label>
+            <input type="text" name="newPassword">
+            <p id="errorNewPassword" class="error"></p>
+        </div>
+        <div>
+            <label>Nhập lại mật khẩu mới:</label>
+            <input type="text" name="confirmPassword">
+            <p id="errorConfirmPassword" class="error"></p>
+        </div>
+        <button onclick="return validateForm()">Đổi mật khẩu</button>
+    </form>
+</body>
+</html>

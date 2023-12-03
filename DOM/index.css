@@ -1,0 +1,16 @@
+.hien {
+    display: block;
+    font-size: 100px;
+    font-weight: bolder;
+    color: red;
+}
+
+.vuong {
+    height: 50px;
+    width: 50px;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+}
